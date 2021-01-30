@@ -23,29 +23,24 @@ export default function SplitNFT() {
                                             </div>
                                         </div>
                                     </div>
-
                                     <div className="filed block">
                                         <label className="label">Price</label>
                                         <input className="input" type="text" placeholder="Set base price" />
                                     </div>
-
                                     <div className="filed block">
                                         <label className="label">Number of SubNFT</label>
                                         <input className="input" type="text" placeholder="Set the number of SubNFT" />
                                     </div>
-
                                     <div className="filed block">
                                         <label className="label">Reserved</label>
                                         <input className="input" type="text" placeholder="Set the number of SUbNFTs reserved for the creator" />
                                     </div>
-
                                     <div className="filed block">
                                         <label className="si si-switcher">
                                             <input type="checkbox" />
                                             <span className="si-label">use one price?</span>
                                         </label>
                                     </div>
-
                                     <div className="columns is-centered">
                                         <div className="column is-half">
                                             <button className="button is-primary is-medium is-fullwidth">
@@ -53,7 +48,6 @@ export default function SplitNFT() {
                                             </button>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

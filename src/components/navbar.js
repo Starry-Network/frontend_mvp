@@ -1,21 +1,20 @@
+import {
+    Link
+  } from "react-router-dom";
+
 import { useState } from "react"
-import Link from 'next/link';
 
 const NavbarEnd = () => (
     <div className="navbar-end">
-        <Link href='/'>
-            <a className="navbar-item">
-                Exchange
-            </a>
+        <Link className="navbar-item" to="/">
+            Exchange
         </Link>
-
-
-        <a className="navbar-item" href="/create">
+        <Link className="navbar-item" to="/create">
             Create
-                    </a>
-        <a className="navbar-item" href="/splitNFT">
+        </Link>
+        <Link className="navbar-item" to="/splitNFT">
             Split NFT
-        </a>
+        </Link>
     </div>
 )
 
@@ -25,9 +24,9 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar_warpper is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-                <a className="navbar-item" href="/">
+                <Link className="navbar-item" to="/">
                     Starry
-                </a>
+                </Link>
                 <button
                     onClick={() => {
                         setMobileMenuActivate(!isMobileMenuActivate);

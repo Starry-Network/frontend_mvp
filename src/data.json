@@ -1,0 +1,18 @@
+[
+    {
+      "type": "one-price",
+      "url": "/images/nft1.jpeg",
+      "title": "data exchange",
+      "price": 700,
+      "description": "cross chain data exchange"
+    },
+    {
+      "type": "splited",
+      "url": "/images/nft1.jpeg",
+      "title": "data exchange",
+      "price": 7,
+      "totalSupply": 100,
+      "sold": 20,
+      "description": "cross chain data exchange"
+    }
+  ]

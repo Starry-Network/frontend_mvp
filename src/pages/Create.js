@@ -4,8 +4,6 @@ import { faUpload } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/layout'
 
-
-
 export default function Create() {
     const [files, setFiles] = useState(null)
     const [createMultipleNFT, setCreateMultipleNFT] = useState(false)
@@ -42,7 +40,6 @@ export default function Create() {
                             </div>
                         </div>
                         <div className="column is-three-fifths">
-
                             <div className="columns is-centered">
                                 <div className="column is-half">
                                     <div className="file  is-centered is-boxed" >
@@ -54,14 +51,12 @@ export default function Create() {
                                                 </span>
                                                 <span className="file-label">
                                                     Choose your image
-                                        </span>
+                                                </span>
                                             </span>
-
                                         </label>
                                     </div>
                                 </div>
                             </div>
-
                             <div className="columns is-centered">
                                 <div className="column is-half">
                                     <div className="filed block">
@@ -91,7 +86,6 @@ export default function Create() {
                                     </div>) : null}
                                 </div>
                             </div>
-
                             <div className="columns is-centered">
                                 <div className="column is-half">
                                     <button className="button is-primary   is-medium is-fullwidth">
@@ -99,7 +93,6 @@ export default function Create() {
                                     </button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,15 @@
-import { useRouter } from 'next/router';
-import Image from 'next/image'
-import Layout from '../components/layout'
+import {
+    useParams
+} from "react-router-dom";
 
-export default function Nft() {
-    const router = useRouter();
-    const { url, title, description, price, type, totalSupply, sold } = router.query;
-    console.log(router.query)
+import Layout from '../components/layout'
+import * as data from '../data.json';
+
+export default function NFT(props) {
+    const { index } = useParams();
+    const nft = data.default[index]
+    const { url, title, description, price, type, totalSupply, sold } = nft;
+
     return (
         <Layout>
             <section className="hero">
@@ -20,18 +24,23 @@ export default function Nft() {
                             </div>
                         </div>
                         <div className="column is-half">
-                            <div className="columns is-centered">
-                                <div className="column is-half">
-                                    <Image
-                                        className="is-1by1"
-                                        src={`${url}`}
-                                        alt="creator"
-                                        width={600}
-                                        height={600}
-                                    />
+                            <div className="columns">
+                                <div className="column is-full is-flex" >
+                                    <div style={{
+                                        width: "100%",
+                                        height: "250px",
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        backgroundImage: `url("${url}")`,
+                                        backgroundSize: "contain",
+                                        backgroundRepeat: "no-repeat",
+                                        backgroundPosition: "50% 50%"
+                                    }}>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                         <div className="column">
                             {/* additional data */}
@@ -43,23 +52,21 @@ export default function Nft() {
                                         </div>
                                     </div>
                                     <div className="level-item">
-                                        <figure class="image is-48x48">
-                                            <Image
+                                        <figure className="image is-48x48">
+                                            <img
                                                 className="is-rounded"
                                                 src="/images/creator.jpg"
                                                 alt="creator"
-                                                width={48}
-                                                height={48}
+                                                style={{ width: "48px", height: "48px" }}
                                             />
                                         </figure>
                                     </div>
                                 </div>
                             </div>
                             <div className="tags">
-                                <span class="tag is-light">#art</span>
-                                <span class="tag is-light">#2021</span>
+                                <span className="tag is-light">#art</span>
+                                <span className="tag is-light">#2021</span>
                             </div>
-
                             <p>
                                 {type === "splited" ? `this is a SubNFT ` : ''}
                             </p>
