@@ -1,0 +1,15 @@
+.navbar_warpper {
+    font-size: 1.125rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar_warpper {
+        padding: 0.6rem 2rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar {
+        min-height: 3.25rem;
+    }
+}
