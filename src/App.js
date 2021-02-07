@@ -7,9 +7,9 @@ import {
 import Navbar from './components/navbar'
 import Home from './pages/Home'
 import Create from './pages/Create'
-import SpiltNFT from './pages/splitNFT'
+import SpiltNFT from './pages/SplitNFT'
 import NFT from './pages/NFT'
-
+import DAOs from './pages/DAOs'
 
 
 import 'bulma/css/bulma.css'
@@ -25,13 +25,16 @@ function App() {
           <Home />
         </Route>
         <Route path="/create">
-            <Create />
+          <Create />
         </Route>
         <Route path="/splitNFT">
           <SpiltNFT />
         </Route>
         <Route path="/nft/:index">
           <NFT />
+        </Route>
+        <Route path="/daos">
+          <DAOs />
         </Route>
       </Switch>
     </Router>

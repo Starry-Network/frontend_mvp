@@ -15,6 +15,9 @@ const NavbarEnd = () => (
         <Link className="navbar-item" to="/splitNFT">
             Split NFT
         </Link>
+        <Link className="navbar-item" to="/daos">
+            DAOs
+        </Link>
     </div>
 )
 
