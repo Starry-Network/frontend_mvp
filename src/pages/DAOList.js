@@ -1,8 +1,10 @@
 
 import Layout from '../components/layout'
+import {
+    Link,
+} from "react-router-dom";
 
-
-export default function Home() {
+export default function DAOList() {
     return (
         <Layout>
             <section className="hero">
@@ -14,9 +16,11 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="columns is-multiline">
-                        <div class="box">
-                            here is a art nfts dao
+                        <Link to={`/dao/${0}`}>
+                            <div className="box">
+                                This is a DAO that collects artwork
                         </div>
+                        </Link>
                     </div>
                 </div>
             </section>

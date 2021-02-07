@@ -9,7 +9,9 @@ import Home from './pages/Home'
 import Create from './pages/Create'
 import SpiltNFT from './pages/SplitNFT'
 import NFT from './pages/NFT'
-import DAOs from './pages/DAOs'
+import DAOList from './pages/DAOList'
+import DAODetail from './pages/DAODetail'
+
 
 
 import 'bulma/css/bulma.css'
@@ -33,8 +35,11 @@ function App() {
         <Route path="/nft/:index">
           <NFT />
         </Route>
-        <Route path="/daos">
-          <DAOs />
+        <Route path="/dao/list">
+          <DAOList />
+        </Route>
+        <Route path="/dao/:index">
+          <DAODetail />
         </Route>
       </Switch>
     </Router>
