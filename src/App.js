@@ -7,7 +7,7 @@ import {
 import Navbar from './components/navbar'
 import Home from './pages/Home'
 import Create from './pages/Create'
-import SpiltNFT from './pages/SplitNFT'
+import SpiltNFT from './pages/splitNFT'
 import NFT from './pages/NFT'
 import DAOList from './pages/DAOList'
 import DAODetail from './pages/DAODetail'
