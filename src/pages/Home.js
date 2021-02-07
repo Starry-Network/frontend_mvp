@@ -44,15 +44,19 @@ const CardList = ({ datas }) => {
 export default function Home() {
     return (
         <Layout>
-            <div className="columns">
-                <div className="column is-one-third">
+            <section className="hero">
+                <div className="hero-body">
                     <div className="columns">
+                        <div className="column is-one-third">
+                            <div className="columns">
+                            </div>
+                        </div>
+                    </div>
+                    <div className="columns is-multiline">
+                        <CardList datas={data.default} />
                     </div>
                 </div>
-            </div>
-            <div className="columns is-multiline">
-                <CardList datas={data.default} />
-            </div>
+            </section>
         </Layout>
     )
 }
